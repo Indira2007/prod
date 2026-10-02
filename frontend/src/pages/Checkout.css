@@ -1,0 +1,126 @@
+.checkout-page {
+  padding: 60px 0;
+  min-height: 80vh;
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+}
+
+.checkout-title {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 30px;
+}
+
+.card {
+  background: var(--color-white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-border);
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.checkout-form input:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-section-title {
+  font-size: 1.2rem;
+  margin: 25px 0 15px;
+  color: var(--color-text-dark);
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  padding: 18px;
+}
+
+.variant-card {
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.variant-card:hover {
+  border-color: var(--color-accent-green);
+}
+
+.variant-card.active {
+  border-color: var(--color-primary-light);
+  background-color: var(--color-accent-light-green);
+}
+
+.variant-info h4 {
+  color: var(--color-primary-dark);
+  margin-bottom: 5px;
+}
+
+.variant-info p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+.variant-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--color-primary-dark);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: var(--color-text-light);
+}
+
+.summary-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 20px 0;
+}
+
+.summary-row.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+.text-free {
+  color: var(--color-primary-light);
+  font-weight: bold;
+}
+
+@media (max-width: 960px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,117 @@
+.admin-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.admin-sidebar {
+  width: 250px;
+  background-color: var(--color-primary-dark);
+  color: white;
+  padding: 30px 20px;
+}
+
+.admin-sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: var(--color-accent-light-green);
+}
+
+.admin-sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.admin-sidebar ul li:hover, .admin-sidebar ul li.active {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.admin-main {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.admin-title {
+  margin-bottom: 30px;
+  color: var(--color-primary-dark);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  border-left: 5px solid var(--color-primary-light);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+  margin-top: 10px;
+}
+
+.admin-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table th {
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status-badge.paid { background: #d1fae5; color: #065f46; }
+.status-badge.pending { background: #fef3c7; color: #92400e; }
+.status-badge.shipped { background: #dbeafe; color: #1e40af; }
+
+.btn-small {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--color-primary-light);
+  color: var(--color-primary-light);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-small:hover {
+  background: var(--color-primary-light);
+  color: white;
+}
